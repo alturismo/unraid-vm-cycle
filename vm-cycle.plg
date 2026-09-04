@@ -10,6 +10,7 @@
 <!ENTITY plgNAME   "&name;-&version;-x86_64">
 <!ENTITY emhttp    "/usr/local/emhttp/plugins/&name;">
 <!ENTITY packages  "/boot/config/plugins/&name;/packages">
+<!ENTITY sha256 "d00c81537f24cb9995d8c96a91092d29afbfc2d673ece7d86f08555dafc84733">
 ]>
 <PLUGIN name="&name;" 
         author="&author;" 
@@ -38,6 +39,7 @@ Plugin to switch VM's with similar hardware passthrough.
 
 <FILE Name="&plgPATH;/&plgNAME;.txz" Run="upgradepkg --install-new">
 <URL>&gitURL;/packages/&name;.txz</URL>
+<SHA256>&sha256;</SHA256>
 </FILE>
 
 <FILE Run="/bin/bash">
